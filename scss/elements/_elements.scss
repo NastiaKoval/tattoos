@@ -1,5 +1,7 @@
 header {
     background: url(../../img/hero-bg.png);
+    background-position: center;
+    padding-top: 2.5vw;
     padding-left: 10.6vw;
     padding-right: 10.6vw;
 }
@@ -25,6 +27,7 @@ section {
 
 h2 {
     color: $big-headers-color;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -48,7 +51,6 @@ span {
 }
 
 footer {
-    border-top: 1px solid $menu-line-color;
     padding-left: 10.6vw;
     padding-right: 10.6vw;
 }
