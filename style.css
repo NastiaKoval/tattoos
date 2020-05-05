@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Playfair Display SC', serif;
-  src: url("../../fonts/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf");
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Raleway', sans-serif;
-  src: url("../../fonts/Raleway/Raleway-Regular.ttf");
-  font-weight: 400;
-}
 h1,
 h2,
 h3,
@@ -113,6 +103,7 @@ ul {
 
 li {
   font-size: 15px;
+  color: #F6F6F6;
 }
 
 section {
@@ -137,18 +128,36 @@ p {
 
 button {
   border: none;
+  background-color: transparent;
   color: #F6F6F6;
   font-size: 15px;
 }
 
 span {
-  border: 1px solid #FD0000;
+  font-size: 14px;
+  line-height: 11px;
   color: #FD0000;
+}
+
+input[type=file] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -10;
 }
 
 footer {
   padding-left: 10.6vw;
   padding-right: 10.6vw;
+}
+
+.plus {
+  vertical-align: top;
+}
+
+.plus {
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=style.css.map */
