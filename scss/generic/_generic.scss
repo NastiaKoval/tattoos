@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    @extend %text;
+    color: $light-text;
+    background-color: $bgc;
+    box-sizing: border-box;
+    font-size: $small-text;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+  }
+
+ul {
+    list-style: none;
+    margin-bottom: 16px;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    background-color: transparent;
+    color: $menu-color;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $active-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %headers;
+  margin-top: 0;
+}
+
+h1 {
+    font-size: $header-1;
+}
+
+h2 {
+    font-size: $header-2;
+}
+
+h3 {
+    font-size: $header-3;
+}
+
+h4 {
+    font-size: $header-4;
+}
+
+h5 {
+    font-size: $header-5;
+}
