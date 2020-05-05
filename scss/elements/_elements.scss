@@ -1,0 +1,54 @@
+header {
+    background: url(../../img/hero-bg.png);
+    padding-left: 10.6vw;
+    padding-right: 10.6vw;
+}
+
+nav {
+    border-bottom: 1px solid $menu-line-color;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    font-size: $menu-font-size;
+}
+
+section {
+    padding-top: 5.5vw;
+    padding-left: 10.6vw;
+    padding-right: 10.6vw;
+}
+
+h2 {
+    color: $big-headers-color;
+}
+
+h3 {
+    color: $light-text;
+}
+
+p {
+    color: $dark-text;
+    font-size: $small-text;
+}
+
+button {
+    border: none;
+    color: $light-btn;
+    font-size: $small-text;
+}
+
+span {
+    border: 1px solid $icons-color;
+    color: $icons-color;
+}
+
+footer {
+    border-top: 1px solid $menu-line-color;
+    padding-left: 10.6vw;
+    padding-right: 10.6vw;
+}
