@@ -26,9 +26,10 @@ a:hover {
 }
 
 section {
-    padding-top: 5.5vw;
+    padding-top: 6.2vw;
     padding-left: 10.6vw;
     padding-right: 10.6vw;
+    padding-bottom: 128px;
 }
 
 h2 {
@@ -38,11 +39,13 @@ h2 {
 
 h3 {
     color: $light-text;
+    text-transform: uppercase;
 }
 
 p {
     color: $dark-text;
     font-size: $small-text;
+    margin: 0;
 }
 
 button {

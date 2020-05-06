@@ -1,3 +1,318 @@
+.artists {
+    h2 {
+        letter-spacing: 0.09em;
+    }
+}
+
+
+.artists-container {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artist-article {
+    width: 18vw;
+}
+
+.artist-article-text{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    img {
+        width: 11.45px;
+        height: auto;
+    }
+}
+
 .plus {
     vertical-align: top;
+}
+
+.advantages {
+    padding-top: 10.5vw;
+    padding-bottom: 147px;
+    background: url('../../img/advantages-bg.png');
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-article {
+    width: 325px;
+    display: flex;
+
+    .advantage-icon {
+        margin-right: 18px;
+        width: 80px;
+        height: 80px;
+    }
+
+    h3 {
+        margin: 11px 0 9px 0;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.award {
+    width: 310px;
+    margin-right: 20px;
+}
+
+.hygiene {
+    width: 280px;
+}
+
+.advantage-article-text {
+    h3 {
+        color: $dark-text;
+    }
+
+    button {
+        color: $red-btn-color;
+    }
+}
+
+.featured {
+    padding-bottom: 184px;
+}
+
+.featured-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h2 {
+        letter-spacing: 0.09em;
+    }
+
+    button {
+        margin-bottom: 7px;
+    }
+
+    .plus {
+        margin-left: 7px;
+    }
+}
+
+.features-photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 28px;
+
+    h3 {
+        margin-bottom: 48px;
+    }
+
+    .features-photos-part {
+        width: 38.4vw;
+    }
+
+    .photos-part {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 18vw;
+        }
+    }
+}
+
+.about {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url('../../img/about-bg.png');
+    background-position: center;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    padding-top: 6.2vw;
+    padding-bottom: 128px;
+
+    h2 {
+        letter-spacing: 0.09em;
+    }
+
+    p {
+        width: 31vw;
+        margin-top: 20px;
+    }
+}
+
+.about-img {
+    position: absolute;
+    top: -0.9vw;
+    right: 10.6vw;
+    // height: max-content;
+    width: 45vw;
+}
+
+.invisible {
+    display: none;
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1240px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .about-img {
+        position: absolute;
+        top: 3vw;
+        right: 10.6vw;
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    h2 {
+        font-size: $header-2-mob;
+    }
+
+    .artist-article {
+        width: 37vw;
+
+        .artist-photo {
+            width: 37vw;
+            height: auto;
+        }
+    }
+
+    .advantage-article {
+        width: 300px;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .award p{
+        margin-bottom: 20px;
+    }
+
+    .features-photos-container {
+
+        h3 {
+            text-align: center;
+        }
+
+        .features-photos-part {
+            width: 80vw;
+            margin-bottom: 30px;
+        }
+
+        .photos-part {
+            img {
+                width: 37vw;
+            }
+        }  
+    } 
+    
+    .about-img {
+        position: absolute;
+        top: 3vw;
+        right: 10.6vw;
+        width: 45vw;
+    }
+
+    .about-img {
+        position: absolute;
+        top: 7vw;
+        right: 10.6vw;
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    
+
+    h3 {
+        font-size: $header-3-mob;
+    }
+
+    section {
+        padding-bottom: 20px;
+    }
+
+    .artist-article {
+        width: 80vw;
+        margin-bottom: 40px;
+
+        .artist-photo {
+            width: 80vw;
+            height: auto;
+        }
+    }
+
+    .advantages {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .advantage-article {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .featured {
+        padding-bottom: 0;
+    }
+
+    .features-photos-container {
+        
+        .features-photos-part {
+            width: 80vw;
+        }
+
+        .photos-part {
+            flex-wrap: wrap;
+            
+            img { 
+                width: 80vw;
+                margin-bottom: 30px;
+            }
+        }  
+    }
+    
+    .about {
+        height: auto;
+        display: block;
+    }
+
+    .about-text {
+        padding-top: 6.2vw;
+        padding-bottom: 30px;
+    
+        p {
+            width: 80vw;
+            margin-top: 20px;
+        }
+    }
+
+    .about-img {
+        position: relative;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 80vw;
+        padding-bottom: 30px;
+    }
 }
