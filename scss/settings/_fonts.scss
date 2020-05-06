@@ -13,11 +13,13 @@
 %headers {
     font-family: 'Playfair Display SC', serif;
     font-weight: 900;
+    letter-spacing: 0.01em;
 }
 
 %text {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 $header-1: 18px;
@@ -28,4 +30,5 @@ $header-5: 14px;
 $menu-font-size: 15px;
 $small-text: 15px;
 $contact-btn-font-size: 16px;
+$contact-plus: 34px;
 $footer-text-size: 13px;

@@ -6,11 +6,13 @@ h5,
 h6 {
   font-family: 'Playfair Display SC', serif;
   font-weight: 900;
+  letter-spacing: 0.01em;
 }
 
-body {
+body, button {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 *,
@@ -33,7 +35,7 @@ body {
 
 ul {
   list-style: none;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
   margin-top: 0;
   padding-left: 0;
 }
@@ -61,6 +63,7 @@ h3,
 h4,
 h5,
 h6 {
+  letter-spacing: 0.01em;
   margin-top: 0;
 }
 
@@ -93,7 +96,7 @@ header {
 }
 
 nav {
-  border-bottom: 1px solid #89898B;
+  border-bottom: 2px solid #89898B;
 }
 
 ul {
@@ -104,6 +107,11 @@ ul {
 li {
   font-size: 15px;
   color: #F6F6F6;
+  letter-spacing: 0.01em;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 section {
@@ -133,10 +141,8 @@ button {
   font-size: 15px;
 }
 
-span {
-  font-size: 14px;
-  line-height: 11px;
-  color: #FD0000;
+button:hover {
+  cursor: pointer;
 }
 
 input[type=file] {
@@ -152,8 +158,52 @@ footer {
   padding-right: 10.6vw;
 }
 
-.plus {
-  vertical-align: top;
+ul {
+  padding-right: 4px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-top {
+  position: relative;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-top-social {
+  padding-top: 5px;
+  padding-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-main {
+  position: relative;
+  margin-top: -43px;
+  text-align: center;
+  padding-bottom: 107px;
+}
+
+.contact-us-btn {
+  position: relative;
+  margin-top: 46px;
+  display: inline-flex;
+  align-items: center;
+  color: #D8D8D9;
+  font-size: 16px;
+  border: 2px solid #D8D8D9;
+  padding: 13px 27px 11px 22px;
+}
+
+.contact-plus {
+  font-size: 34px;
+  color: #D8D8D9;
+  line-height: 0em;
+  padding-left: 10px;
 }
 
 .plus {

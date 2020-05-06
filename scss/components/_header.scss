@@ -1,3 +1,47 @@
-.plus {
-    vertical-align: top;
+ul {
+    padding-right: 4px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-top {
+    position: relative;
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-top-social {
+    padding-top: 5px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-main {
+    position: relative;
+    margin-top: -43px;
+    text-align: center;
+    padding-bottom: 107px;
+}
+
+.contact-us-btn {
+    position: relative;
+    margin-top: 46px;
+    display: inline-flex;
+    align-items: center;
+    color: $contact-btn-color;
+    font-size: $contact-btn-font-size;
+    border: 2px solid $contact-btn-color;
+    padding: 13px 27px 11px 22px;
+}
+
+.contact-plus {
+    font-size: $contact-plus;
+    color: $contact-btn-color;
+    line-height: 0em;
+    padding-left: 10px;   
 }

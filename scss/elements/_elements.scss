@@ -7,7 +7,7 @@ header {
 }
 
 nav {
-    border-bottom: 1px solid $menu-line-color;
+    border-bottom: 2px solid $menu-line-color;
 }
 
 ul {
@@ -18,6 +18,11 @@ ul {
 li {
     font-size: $menu-font-size;
     color: $menu-color;
+    letter-spacing: 0.01em;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 section {
@@ -47,10 +52,8 @@ button {
     font-size: $small-text;
 }
 
-span {
-    font-size: 14px;
-    line-height: 11px;
-    color: $icons-color;
+button:hover {
+    cursor: pointer;
 }
 
 input[type=file] {
