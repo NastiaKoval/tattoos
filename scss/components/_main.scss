@@ -4,7 +4,6 @@
     }
 }
 
-
 .artists-container {
     margin-top: 25px;
     display: flex;
@@ -125,6 +124,21 @@
     }
 }
 
+.full-screen {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(196, 196, 196, 0.6);
+    z-index: 3;
+}
+
+.big-img {
+    width: 80vw;
+    height: auto;
+    z-index: 5;
+}
+
 .about {
     position: relative;
     padding-top: 0;
@@ -155,6 +169,7 @@
     top: -0.9vw;
     right: 10.6vw;
     width: 45vw;
+    max-width: 650px;
 }
 
 .instagram {
@@ -162,6 +177,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0px;
 
     button {
         margin-top: 27px;
@@ -169,6 +185,8 @@
     }
 
     .grid-container {
+        display: block;
+        margin: 0 auto;
         margin-top: 27px;
         width: 80vw;
     }
@@ -196,6 +214,177 @@
     display: none;
 }
 
+.contacts-form {
+    padding-top: 5.6vw;
+    text-align: center;
+    padding-bottom: 80px;
+
+    h3 {
+        padding-bottom: 20px;
+    }
+}
+
+form {
+    width: 37.5vw;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #email {
+        padding-left: 17px;
+        padding-bottom: 8px;
+    }
+
+    .one-line {
+        height: 28px;
+    }
+
+    .form-field {
+        color: $placeholder-color;
+        width: 37.5vw;
+        margin-top: 4px;
+        margin-bottom: 28px;
+        padding-left: 27px;
+        padding-bottom: 10px;
+        font-size: $small-text;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $form-line-color;
+    }
+
+    .form-field {
+        @include placeholder($placeholder-color, $small-text);
+    }
+
+    .select-container {
+        position: relative;
+    }
+
+    .select-container select {
+        display: block;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $form-line-color;
+        -webkit-appearance: none;/* Chrome */
+        -moz-appearance: none;/* Firefox */
+        appearance: none;/* убираем дефолнтные стрелочки */
+    }
+
+    .select-container:after {
+        content: url(../../img/arrow.png);
+        display: block;
+        
+        pointer-events: none;
+        position: absolute;
+        top: 5px;
+        right: 1rem;
+        z-index: 1;
+    }
+    
+
+    textarea {
+        height: 90px;
+    }
+
+    .files {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-us-btn {
+        width: 180px;
+        align-self: center;
+        margin: 25px auto 0px auto;
+        position: relative;
+        margin-top: 58px;
+        display: inline-flex;
+        align-items: center;
+        color: $contact-btn-color;
+        font-size: $contact-btn-font-size;
+        border: 2px solid $contact-btn-color;
+        padding: 13px 27px 11px 22px;
+    }
+
+}
+
+.contacts {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+.contact-info {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 6.7vw;
+    background: $contact-bgc;
+    display: flex;
+    justify-content: space-between;
+
+    .contact-info-text {
+        width: 17.4vw;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        h5 {
+            color: $dark-text;
+            margin-bottom: 3px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .first-line {
+            margin-bottom: 0px;
+        }
+    }
+
+    .map {
+        width: 45vw;
+    }
+
+    .contact-info-social {
+        img {
+            width: 20px;
+            margin-right: 22px;
+        }
+    }
+}
+
+footer nav {
+    border-bottom: 2px solid $menu-line-color;
+    border-top: 2px solid $menu-line-color;
+    padding: 20px 0 10px 0;
+}
+
+.copyright {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    p {
+        color: $footer-text-color;
+        font-size: $footer-text-size;
+    }
+
+    .copyright-social {
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    img {
+        align-self: center;
+        width: 15px;
+    }
+}
+
+
 @media only screen and (min-width: 980px) and (max-width: 1240px) {
     h3 {
         font-size: 16px;
@@ -210,6 +399,34 @@
         top: 3vw;
         right: 10.6vw;
         width: 45vw;
+    }
+
+    .contact-info {
+        padding-left: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        .contact-info-text {
+            width: 80vw;
+            text-align: center;
+            margin: 0;
+        }
+
+        .map {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        .contact-info-social {
+            width: 5vw;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            img {
+                margin-right: 0px;
+            }
+        }
     }
 }
 
@@ -268,6 +485,55 @@
         top: 7vw;
         right: 10.6vw;
         width: 45vw;
+    }
+
+    form {
+        width: 80vw;
+
+        .form-field {
+            width: 80vw;
+        }
+    }
+
+    .contact-info {
+        padding-left: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        .contact-info-text {
+            width: 80vw;
+            text-align: center;
+            margin: 0;
+        }
+
+        .map {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        .contact-info-social {
+            width: 70px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            img {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    footer {
+        nav {
+            display: none;
+        }
+    }
+
+    .copyright {
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 

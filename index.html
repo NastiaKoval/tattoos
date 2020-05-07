@@ -10,19 +10,22 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header >
+            <div id="burger" class="close">
+                <img src="img/burger-menu.png" alt="burger-menu-icon">
+            </div>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">New! Tattoo supplies</a></li>
-                    <li><a href="">Artists</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">360 tour</a></li>
-                    <li><a href="">Featured work</a></li>
-                    <li><a href="">Aftercare</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New! Tattoo supplies</a></li>
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">360 tour</a></li>
+                    <li><a href="#">Featured work</a></li>
+                    <li><a href="#">Aftercare</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -36,12 +39,12 @@
                 <div class="hero-main">
                     <img class="main-logo" src="img/hero-logo.png" alt="dream masters custom tattoos">
                     <h1>ONE STEP BEYOND TATTOOING</h1>
-                    <button class="contact-us-btn">CONTACT US <span class="contact-plus">+</span></button>
+                    <button class="contact-us-btn"><a href="#contact">CONTACT US <span class="contact-plus">+</span></a></button>
                 </div>
             </div>
         </header>
         <main>
-            <section class="artists">
+            <section id="artists" class="artists">
                 <h2>artists</h2>
                 <div class="artists-container">
                     <article class="artist-article">
@@ -119,7 +122,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section id="about" class="about">
                 <div class="about-text">
                     <h2>about us</h2>
                     <p>We are a small family owned business that was established in Sweden back in 2006. 
@@ -151,38 +154,40 @@
                 </div>
                 <button>show more <img class="plus" src="img/btn-plus.png" alt="plus"></button>
             </section>
-            <section class="contacts">
+            <section id="contact" class="contacts-form">
                 <h3>contact form</h3>
                 <form action="#" enctype="multipart/form-data" method="post">
-                    <label for="email">e-mail*</label>
+                    <label for="email">e-mail *</label>
                     <input id="email" class="form-field one-line" type="email" name="email" placeholder="Enter your name" required pattern="[-.\w]+@([\w-]+\.)+\w+">
-                    <br>
-                    <label for="artist">pick your artist</label>
-                    <input list="artists" class="form-field one-line" name="sauce" placeholder="Svetlyo">
-                    <datalist id="artists">
-                        <option value="Svetlyo"></option>
-                        <option value="Renette"></option>
-                        <option value="Dave"></option>
-                        <option value="Kayla"></option>
-                    </datalist>
-                    <br>
-                    <label for="description">message*</label>
-                    <textarea id="description" class="form-field" name="description" rows="5" cols="30" placeholder="Describe your project in detail..."></textarea>
-                    <br>
-                    <input id="file-input-1" type="file" name="file-1" accept="image/*">
-                    <label for="file-input-1">upload image <img src="img/paper-clip.png" alt="paper clip"></label>
-                    <input id="file-input-2" type="file" name="file-2" accept="image/*">
-                    <label for="file-input-2">upload image <img src="img/paper-clip.png" alt="paper clip"></label>
-                    <input id="file-input-3" type="file" name="file-3" accept="image/*">
-                    <label for="file-input-3">upload image <img src="img/paper-clip.png" alt="paper clip"></label>
+                    <label for="artists">pick your artist</label>
+                    <div class="select-container">
+                        <select id="artists" class="form-field one-line" name="artists">
+                            <option value="Svetlyo">Svetlyo</option>
+                            <option value="Renette">Renette</option>
+                            <option value="Dave">Dave</option>
+                            <option value="Kayla">Kayla</option>
+                        </select>
+                    </div>
+                    <label for="description">message *</label>
+                    <textarea id="description" class="form-field" name="description" rows="5" cols="30" placeholder="Tell us about your idea"></textarea>
+                    <div class="files">
+                        <input id="file-input-1" type="file" name="file-1" accept="image/*">
+                        <label for="file-input-1">upload image <img src="img/paper-clip.png" alt="paper clip"></label>
+                        <input id="file-input-2" type="file" name="file-2" accept="image/*">
+                        <label for="file-input-2">upload image <img src="img/paper-clip.png" alt="paper clip"></label>
+                        <input id="file-input-3" type="file" name="file-3" accept="image/*">
+                        <label for="file-input-3">upload image <img src="img/paper-clip.png" alt="paper clip"></label>
+                    </div>
                     <br>
                     <button class="contact-us-btn">CONTACT US <span class="contact-plus">+</span></button>
                 </form>
+            </section>
+            <section class="contacts">
                 <div class="contact-info">
                     <div class="contact-info-text">
                         <h5>OPENING HOURS:</h5>
-                        <p>Mon-Fri:  12am-8pm
-                        Sunday:  12pm-8pm</p>
+                        <p class="first-line">Mon-Fri:  12am-8pm</p>
+                        <p>Sunday:  12pm-8pm</p>
                         <h5>adress:</h5>
                         <p>228 Columbus Ave, San Francisco 
                         California, 94133</p>
@@ -195,7 +200,7 @@
                             <img src="img/instagram.png" alt="instagram">
                         </div>
                     </div>
-                    <img src="img/map.png" alt="map">
+                    <img class="map" src="img/map.png" alt="map">
                 </div>
             </section>
         </main>
