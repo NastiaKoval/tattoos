@@ -10,4 +10,4 @@ I have made:
   * use masonry-grid;
   * customize form fields.
 
-[DEMO](nastia-koval-tattoos.netlify.app)
+[DEMO](https://nastia-koval-tattoos.netlify.app/)
